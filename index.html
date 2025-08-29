@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="satyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo-3-removebg-preview.jpg" alt="" class="logo">
+
+                <ul id="sidemenu">
+                    <li><a href="index.html" class="navlink" data-target="#header">Home</a></li>
+                    <li><a href="#skills-section" class="navlink" data-target="#skills-section">Skills</a></li>
+                    <li><a href="#services" class="navlink" data-target="#services">Services</a></li>
+                    <li><a href="#portfolio" class="navlink" data-target="#portfolio">My Work</a></li>
+                    <li><a href="#contact" class="navlink" data-target="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark ba" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars ba" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text reveal">
+                <p>Full-stack Developer</p>
+                <h1>Hi, I'm <span>Manish</span> <br>Kumar</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills & Education: tabbed full width section -->
+    <section id="skills-section" class="reveal">
+        <div class="container">
+            <div class="tab-titles">
+                <p class="Tab-d active-link" onclick="openSE('skills-tab', event)">Skills</p>
+                <p class="Tab-d" onclick="openSE('education-tab', event)">Education</p>
+            </div>
+            <div id="skills-tab" class="se-tab active-tab">
+                <ul class="skills-grid">
+                    <li><span>Web</span> Devlopment</li>
+                    <li><span>React</span> js</li>
+                    <li><span>Bootstrap</span> css</li>
+                    <li><span>Tailwind</span> css</li>
+                    <li><span>My</span> SQL</li>
+                    <li><span>Java</span></li>
+                    <li><span>Java</span> with DSA</li>
+                    <li><span>Java</span>script</li>
+                    <li><span>Spring</span> Boot</li>
+                    <li><span>Hibernate</span> ORM</li>
+                    <li><span>Micro</span>services</li>
+                    <li><span>Restful</span> APIs</li>
+                    <li><span>Postman</span></li>
+                    <li><span>Jira</span></li>
+                </ul>
+            </div>
+            <div id="education-tab" class="se-tab">
+                <ul class="timeline">
+                    <li>
+                        <div class="time">2021 - 2025</div>
+                        <div class="title">B-tech, IIMT College of Engineering</div>
+                        <h4 class="title ">CGPA - 7.6</h4>
+                        <div class="meta">Dr. APJ Abdul Kalam Technical University</div>
+                    </li>
+                    <li>
+                        <div class="time">2019 - 2021</div>
+                        <h4 class="title ">Percentage - 69%</h4>
+                        <div class="title">12th, R.B.G.R College</div>
+                        <div class="meta">BSEB Board</div>
+                    </li>
+                    <li>
+                        <div class="time">2019</div>
+                        <div class="title">10th, Saraswati Vidya Mandir</div>
+                        <h4 class="title ">Percentage - 70%</h4>
+                        <div class="meta">CBSE Board</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <div id="services" class="reveal">
+        <div class="container">
+            <h1 class="Sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Full-stack Developer</h2>
+                    <p class="serv">I build fast, responsive and SEO‑friendly Custom websites using modern stacks, ensuring clean code and smooth user experiences.</p>
+                    <a href="">Learn more </a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Software Developer</h2>
+                    <p class="serv">Custom software solutions from planning to deployment — robust backends, clean architecture, secure APIs and maintainable code.</p>
+                    <a href="">Learn more </a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-hourglass-end"></i>
+                    <h2>Frontend developer</h2>
+                    <p class="serv">Pixel‑perfect interfaces with React, animations, accessibility and state management for delightful, performant frontends.</p>
+                    <a href="">Learn more </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------achievements / counters---------- -->
+    <div id="achievements" class="reveal">
+        <div class="container">
+            <h1 class="Sub-title">Experience</h1>
+            <div class="metrics">
+                <div class="metric">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <div class="num counter" data-target="3">0</div>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="metric">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <div class="num counter" data-target="2">0</div>
+                    <p>Total Experience (Project)</p>
+                </div>
+                <div class="metric">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <div class="num counter" data-target="6">0</div>
+                    <p>Internship (Months)</p>
+                </div>
+                <div class="metric">
+                    <i class="fa-solid fa-chalkboard-teacher"></i>
+                    <div class="num counter" data-target="6">0</div>
+                    <p>Training (Months)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------testimonials---------- -->
+    <!-- <div id="testimonials" class="reveal">
+        <div class="container">
+            <h1 class="Sub-title">Testimonials</h1>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="t-content">“Delivered our website ahead of schedule with excellent quality. Communication was smooth and proactive.”</div>
+                    <div class="t-author">
+                        <i class="fa-solid fa-user"></i>
+                        <div><strong>Rohit Sharma</strong><br><span>Founder, FreshKart</span></div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="t-content">“Clean code and scalable structure. The app performance and UX improved noticeably after his work.”</div>
+                    <div class="t-author">
+                        <i class="fa-solid fa-user"></i>
+                        <div><strong>Priya Verma</strong><br><span>Product Manager, SoftHub</span></div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="t-content">“Very professional. Great at translating business needs into technical solutions. Highly recommended.”</div>
+                    <div class="t-author">
+                        <i class="fa-solid fa-user"></i>
+                        <div><strong>Arun Singh</strong><br><span>CTO, AlphaTech</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- -----------certifications---------- -->
+    <div id="certifications" class="reveal">
+        <div class="container">
+            <h1 class="Sub-title">Certifications</h1>
+            <div class="certs">
+                <div class="cert">
+                    <i class="fa-solid fa-certificate"></i>
+                    <h3>Spring Boot </h3>
+                    <p>INCAPP • 2025</p>
+                </div>
+                <div class="cert">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Web Design</h3>
+                    <p>Coursera • 2024</p>
+                </div>
+                <div class="cert">
+                    <i class="fa-brands fa-react"></i>
+                    <h3>React Js</h3>
+                    <p>INCAPP • 2024</p>
+                </div>
+                <div class="cert">
+                    <i class="fa-brands fa-java"></i>
+                    <h3>Java + DSA</h3>
+                    <p>INCAPP • 2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------portfolio---------- -->
+
+    <div id="portfolio" class="reveal">
+        <div class="container">
+            <h1 class="Sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Fritables copy.png" alt="">
+                    <div class="layer">
+                        <h3>Fruitable frontend</h3>
+                        <p></p>
+                        <a href="https://manishyadav52.github.io/Fruitables/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="clone.jpg" alt="">
+                    <div class="layer">
+                        <h3>Amazon clone</h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="WhatsApp Image 2024-12-08 at 22.29.46.png" alt="">
+                    <div class="layer">
+                        <h3>Itap </h3>
+                        <p></p>
+                        <a href="https://github.com/ManishYadav52/Innovative-Tallent-Acquisition-Platform-"><i class="fa-solid fa-arrow-up-right-from-square "></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="agriImage.png" alt="">
+                    <div class="layer">
+                        <h3>Agriculture portal</h3>
+                        <p></p>
+                        <a href="https://github.com/ManishYadav52/Smart-Agriculture-Information-Portal-"><i class="fa-solid fa-arrow-up-right-from-square "></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="smartbazzar.png" alt="" style="height: 160px;">
+                    <div class="layer">
+                        <h3>Smart Bazzar</h3>
+                        <p></p>
+                        <a href="https://github.com/ManishYadav52/Jingle-Bazzar"><i class="fa-solid fa-arrow-up-right-from-square "></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -------------contact-------------- -->
+
+    <div id="contact" class="reveal">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p style="font-size: 15px;"><i class="fa-solid fa-paper-plane"></i>manishyadavgccc3@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>6200792144</p>
+                    <div class="sociAL-icon">
+                        <a href="https://www.facebook.com/profile.php?id=100036204131776&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/__being___ahiran__?igsh=MTgzcTA0N2NzdmdkNg=="><i class="fa-brands fa-instagram"></i></i></a>
+                        <a href="https://x.com/manish__kumar_y?t=zkfB1_pg4gww52VtA-41Lw&s=09"><i class="fa-solid fa-x"></i></i></a>
+                        <a href="https://www.linkedin.com/in/manish-yadav-b57354260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/ManishYadav52"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="manish-resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" >Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © Manish kumar. Made with  <i class="fa-solid fa-heart"></i> by Easy tutorials</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName('Tab-d');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx64a7qeBlnxhpCrFDlMGNUQ7zbdGF61tKKzO25evd8w_EvdlJ2LnOCMmiawL3GGss-/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <script>
+    // Back to top + active nav + reveal
+    const backBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) backBtn.classList.add('show'); else backBtn.classList.remove('show');
+    });
+    backBtn && backBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    const navLinks = document.querySelectorAll('.navlink');
+    const sections = ['#header','#skills-section','#services','#portfolio','#contact'].map(s => document.querySelector(s)).filter(Boolean);
+    const linkMap = new Map();
+    navLinks.forEach(l => linkMap.set(l.getAttribute('data-target'), l));
+
+    const setActive = () => {
+      let current = '#header';
+      const offset = 120;
+      sections.forEach(sec => {
+        if (sec && window.scrollY + offset >= sec.offsetTop) current = `#${sec.id}`;
+      });
+      document.querySelectorAll('nav ul a').forEach(a => a.classList.remove('active'));
+      const active = linkMap.get(current);
+      active && active.classList.add('active');
+    };
+    window.addEventListener('scroll', setActive);
+    window.addEventListener('load', setActive);
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('in-view');
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Tabs for Skills/Education section
+    function openSE(tabId, e){
+      document.querySelectorAll('#skills-section .se-tab').forEach(t => t.classList.remove('active-tab'));
+      const tab = document.getElementById(tabId);
+      tab && tab.classList.add('active-tab');
+      const btns = document.querySelectorAll('#skills-section .Tab-d');
+      btns.forEach(b => b.classList.remove('active-link'));
+      if (e && e.currentTarget) e.currentTarget.classList.add('active-link');
+    }
+    window.openSE = openSE;
+
+    // Counter animation on achievements when section enters view
+    const counterElems = document.querySelectorAll('#achievements .counter');
+    let countersStarted = false;
+    const startCounters = () => {
+      if (countersStarted) return;
+      countersStarted = true;
+      counterElems.forEach(el => {
+        const target = parseInt(el.getAttribute('data-target')) || 0;
+        const duration = 1200;
+        const startTime = performance.now();
+        const step = (now) => {
+          const progress = Math.min((now - startTime) / duration, 1);
+          const value = Math.floor(progress * target);
+          el.textContent = value;
+          if (progress < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      });
+    };
+    const ach = document.querySelector('#achievements');
+    if (ach) {
+      const io = new IntersectionObserver((entries)=>{
+        entries.forEach(e=>{ if(e.isIntersecting) { startCounters(); io.disconnect(); } });
+      }, { threshold: 0.3 });
+      io.observe(ach);
+    }
+  </script>
+
+  <!-- Back to top button -->
+  <button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+</body>
+
+</html>
